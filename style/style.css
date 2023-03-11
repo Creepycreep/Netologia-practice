@@ -49,7 +49,7 @@ a:hover {
   padding-top: 30px;
   padding-bottom: 130px;
 
-  background-image: url(../images/banner-bg.jpg);
+  background-image: url(../img/banner-bg.jpg);
   background-size: cover;
   background-position: center;
 
@@ -113,12 +113,85 @@ a:hover {
   text-align: center;
 }
 
+/* Trends */
+
+.trends {
+  margin-bottom: 60px;
+}
+
+.trends .trends__heading {
+  font-size: 20px;
+  margin-bottom: 37px;
+}
+
+.trend-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trend__item {
+  position: relative;
+  box-sizing: border-box;
+  padding: 135px 20px 15px;
+  width: 410px;
+
+
+  background-color: #000000;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: end;
+}
+
+.trend__item::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  content: "";
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.trend1 {
+  background-image: url(../img/trend1.jpg);
+}
+
+.trend2 {
+  background-image: url(../img/trend2.jpg);
+}
+
+.trend3 {
+  background-image: url(../img/trend3.jpg);
+}
+
+.trend4 {
+  background-image: url(../img/trend4.jpg);
+}
+
+.trend-post__border {
+  position: relative;
+  z-index: 2;
+
+  padding: 40px 36px;
+  border: 3px solid #b59f5b;
+}
+
+.trend-post__border .trend-post__heading {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
 /* Main */
 
 .main {
   background-color: #ffffff;
 
-  padding-top: 66px;
+  padding-top: 60px;
   padding-bottom: 14px;
 }
 
