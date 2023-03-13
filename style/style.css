@@ -126,7 +126,11 @@ a:hover {
 
 .trend-items {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.trend__item:nth-of-type(n+2) {
+  margin-left: 5px;
 }
 
 .trend__item {
@@ -192,12 +196,14 @@ a:hover {
   background-color: #ffffff;
 
   padding-top: 60px;
-  padding-bottom: 14px;
+  padding-bottom: 65px;
 }
 
 .main__container_content {
   display: flex;
   justify-content: space-between;
+
+  margin-bottom: 60px;
 }
 
 .article {
@@ -205,8 +211,8 @@ a:hover {
   justify-content: space-between;
 }
 
-.post-list__article {
-  margin-bottom: 50px;
+.post-list__article:nth-of-type(n+2) {
+  margin-top: 50px;
 }
 
 .article__img {
@@ -459,6 +465,104 @@ a:hover {
 .themes__item sup {
   font-size: 12px;
   color: #b59f5b;
+}
+
+/* Products */
+
+.products-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__card {
+  box-sizing: border-box;
+  padding: 0 25px;
+  width: 350px;
+  min-height: 440px;
+}
+
+.card__img {
+  width: 100%;
+
+  margin-bottom: 20px;
+}
+
+.card__border .card__heading {
+  margin-bottom: 8px;
+}
+
+.card__txt {
+  font-size: 15px;
+  line-height: 150%;
+}
+
+.card__link {
+  color: #b59f5b;
+}
+
+.card__bottom {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__price {
+  font-family: 'OpenSans-b';
+  font-size: 20px;
+}
+
+.sale-pillow::before {
+  content: '1000 Р';
+  margin-bottom: -5px;
+  display: block;
+  font-family: 'OpenSans-b';
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.sale-border::before {
+  content: '500 Р';
+  margin-bottom: -5px;
+  display: block;
+  font-family: 'OpenSans-b';
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.card__btn {
+  padding: 19px 30px;
+
+  border: none;
+  background-color: #b59f5b;
+
+  font-family: 'OpenSans-b';
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card__btn:hover {
+  text-decoration: none;
+  background-color: #323232;
+}
+
+.card__border {
+  position: relative;
+  z-index: 1;
+}
+
+.card__border::before {
+  z-index: -1;
+  position: absolute;
+  top: -50px;
+  right: -25px;
+  left: -25px;
+  height: 270px;
+
+  content: "";
+  border: 3px solid #b59f5b;
 }
 
 /* Footer */
