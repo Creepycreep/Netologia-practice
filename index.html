@@ -19,6 +19,12 @@
           </a>
         </div>
 
+        <div class="nav__menu-btn" id="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
         <ul class="nav__menu-list">
           <li class="menu-list__item"><a href="#">Главная</a></li>
           <li class="menu-list__item"><a href="#">Посты</a></li>
@@ -338,7 +344,10 @@
         <div class="products-cards">
           <div class="product__card card">
             <picture class="card__img">
+              <source srcset="img/shop-item-mobile1.jpg" media="(max-width: 360px)">
+
               <source srcset="img/shop-item-tablet1.jpg" media="(max-width: 768px)">
+
               <img src="img/shop-item-desk1.jpg" alt="product image">
             </picture>
 
@@ -358,7 +367,10 @@
 
           <div class="product__card card">
             <picture class="card__img">
+              <source srcset="img/shop-item-mobile2.jpg" media="(max-width: 360px)">
+
               <source srcset="img/shop-item-tablet2.jpg" media="(max-width: 768px)">
+
               <img src="img/shop-item-desk2.jpg" alt="product image">
             </picture>
 
@@ -380,7 +392,10 @@
 
           <div class="product__card card">
             <picture class="card__img">
+              <source srcset="img/shop-item-mobile3.jpg" media="(max-width: 360px)">
+
               <source srcset="img/shop-item-tablet3.jpg" media="(max-width: 768px)">
+
               <img src="img/shop-item-desk3.jpg" alt="product image">
             </picture>
 
@@ -419,6 +434,8 @@
     </div>
 
   </footer>
+
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
